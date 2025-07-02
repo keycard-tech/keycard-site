@@ -32,4 +32,4 @@ In the first phase the client sends a random challenge to the card. The card rep
 
 In the second phase the client sends the client cryptogram which is the SHA-256 hash of the shared secret and the card challenge. The card verifies the cryptogram and thus authenticates the client. On success the card generates a random 256-bit salt which is appended to the shared secret. The SHA-256 hash of the concatenated value is stored in the first available pairing slot and will be further used to derive session keys. The card responds with the pairing index (which the client must send in all OPEN SECURE CHANNEL commands) and the salt used to generate the key, so that the client can generate and store the same key.
 
-The shared secret is a 256-bit value which must be be known to both parts being paired.
+The shared secret is a 256-bit value which must be known to both parts being paired.
