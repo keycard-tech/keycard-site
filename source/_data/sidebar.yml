@@ -81,3 +81,5 @@ docs:
             path: storedata.html
           - title: GET DATA
             path: getdata.html
+          - title: FACTORY RESET
+            path: factoryreset.html
